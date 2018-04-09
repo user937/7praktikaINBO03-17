@@ -1,0 +1,32 @@
+//#include 
+ abstract class Animal {
+    String name;
+    int age;
+    boolean hungry;
+    abstract void voice();
+    void food() {
+        hungry = false;
+    }
+}
+class a Parrot extends Animal {
+    double length;
+    void voice() {
+        System.out.println("bla-bla-bla");
+    }
+}
+class Dog extends  Animal {
+    void voice() {
+        System.out.println("gav-gav");
+    }   
+}
+class Cat extends  Animal {
+    void voice() {
+        System.out.println("Miy-Miy");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Fish nemo = new Fish();
+        nemo.voice();
+    }
+}
